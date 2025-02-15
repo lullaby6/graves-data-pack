@@ -1,4 +1,8 @@
+![bg](https://raw.githubusercontent.com/lullaby6/graves-data-pack/refs/heads/main/images/logo.png)
+
 # Graves
+
+## 📖 Description
 
 Player graves for multiplayer servers
 
