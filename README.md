@@ -11,7 +11,7 @@
 
 ![bg](https://raw.githubusercontent.com/lullaby6/graves-data-pack/refs/heads/main/images/bg.png)
 
-Player graves for multiplayer servers
+Graves to save items when players die!
 
 Version: `1.21.X`
 
