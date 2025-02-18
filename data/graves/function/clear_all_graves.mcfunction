@@ -1,0 +1,1 @@
+function graves:clear_all_graves

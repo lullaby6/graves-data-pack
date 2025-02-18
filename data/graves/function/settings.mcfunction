@@ -8,7 +8,7 @@ execute if score owner graves.settings matches 0 run tellraw @s [{"text":"- Owne
 execute if score glowing graves.settings matches 1 run tellraw @s [{"text":"- Glowing: ","color":"gray"},{"text":"YES","color":"green"},{"text": " - ","color":"gray"},{"text":"NO","color":"gray","clickEvent":{"action":"run_command","value":"/function graves:settings/glowing/no"}}]
 execute if score glowing graves.settings matches 0 run tellraw @s [{"text":"- Glowing: ","color":"gray"},{"text":"YES","color":"gray","clickEvent":{"action":"run_command","value":"/function graves:settings/glowing/yes"}},{"text": " - ","color":"gray"},{"text":"NO","color":"green"}]
 
-tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset Settings","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":""}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/reset"}}]
 tellraw @s [{"text":"- ","color":"gray"},{"text":"Clear All Graves","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":""}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/clear_all_graves"}}]
+tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset Settings","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":""}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/reset"}}]
 
 playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ .5 2
