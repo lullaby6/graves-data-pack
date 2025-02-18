@@ -9,6 +9,8 @@
 [![Repo Size](https://img.shields.io/github/repo-size/lullaby6/graves-data-pack?logo=dropbox&color=red)](https://github.com/lullaby6/graves-data-pack)
 [![Stars](https://img.shields.io/github/stars/lullaby6/graves-data-pack?logo=github&color=yellow)](https://github.com/lullaby6/graves-data-pack/stargazers)
 
+![bg](https://raw.githubusercontent.com/lullaby6/graves-data-pack/refs/heads/main/images/bg.png)
+
 Player graves for multiplayer servers
 
 Version: `1.21.X`
