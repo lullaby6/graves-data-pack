@@ -13,6 +13,8 @@
 
 Graves to save items when players die!
 
+This Data-Pack is not compatible with the `keepInventory` gamerule in true.
+
 Version: `1.21.X`
 
 ## 📂 Installation
