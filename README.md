@@ -29,7 +29,7 @@ Please report any bug/issues to the [Discord Server](https://discord.gg/5UdcDa5x
 
 ### Player
 
-Disable grave spawning on death
+Disable grave spawning on death:
 
 ```mcfunction
 /trigger graves.player.grave_disabled set 1
