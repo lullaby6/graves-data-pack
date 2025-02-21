@@ -20,6 +20,8 @@ execute as @e[tag=graves.xp,distance=..5] store result score @s graves.xp run da
 execute as @e[tag=graves.xp,distance=..5] run scoreboard players operation @n[tag=graves.interaction.new] graves.xp += @s graves.xp
 kill @e[tag=graves.xp,distance=..5]
 
+execute if score despawn graves.settings matches 1 if score despawn_delay graves.settings matches 1.. store result score @n[tag=graves.interaction.new] graves.despawn_delay run scoreboard players get despawn_delay graves.settings
+
 ride @n[tag=graves.marker.new] mount @n[tag=graves.interaction.new]
 ride @n[tag=graves.text.new] mount @n[tag=graves.interaction.new]
 ride @n[tag=graves.block.new] mount @n[tag=graves.interaction.new]

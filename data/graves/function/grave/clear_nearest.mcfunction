@@ -1,0 +1,1 @@
+execute as @n[tag=graves.interaction] run function graves:grave/clear

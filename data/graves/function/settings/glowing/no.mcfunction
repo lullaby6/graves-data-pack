@@ -1,4 +1,5 @@
 scoreboard players set glowing graves.settings 0
+
 function graves:settings
 
-execute as @e[tag=graves.block] run data merge entity @s {Glowing:0b}
+execute as @e[tag=graves.block] run data modify entity @s Glowing set value 0b

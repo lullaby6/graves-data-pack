@@ -27,10 +27,39 @@ Please report any bug/issues to the [Discord Server](https://discord.gg/5UdcDa5x
 
 ## ⌨️ Commands
 
+### Player
+
+Disable grave spawning on death
+
+```mcfunction
+/trigger graves.player.grave_disabled set 1
+```
+
+Enable grave spawning on death:
+
+```mcfunction
+/trigger graves.player.grave_disabled set 0
+```
+
+### Admin
+
 Settings:
+
+- Grave Owner
+- Graves Despawn
+- Glowing Graves
+- Clear Nearest Grave
+- Clear All Graves
+- Reset Settings
 
 ```mcfunction
 /function graves:settings
+```
+
+Set graves despawn delay (20 ticks = 1 second):
+
+```mcfunction
+/scoreboard players set despawn_delay graves.settings <ticks>
 ```
 
 Clear all graves:

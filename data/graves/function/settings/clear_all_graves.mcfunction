@@ -1,3 +1,3 @@
-execute as @e[tag=graves.interaction] run function graves:grave/clear
+function graves:grave/clear_all
 
 function graves:settings
