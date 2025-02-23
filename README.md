@@ -59,10 +59,28 @@ Set graves despawn delay (20 ticks = 1 second):
 /scoreboard players set despawn_delay graves.settings <ticks>
 ```
 
+Loot narest grave:
+
+```mcfunction
+/function graves:grave/loot/nearest
+```
+
+Loot all graves:
+
+```mcfunction
+/function graves:grave/loot/all
+```
+
+Clear narest grave:
+
+```mcfunction
+/function graves:grave/clear/nearest
+```
+
 Clear all graves:
 
 ```mcfunction
-/function graves:clear_all_graves
+/function graves:grave/clear/all
 ```
 
 Disable:
