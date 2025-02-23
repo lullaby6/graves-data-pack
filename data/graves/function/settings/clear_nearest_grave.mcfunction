@@ -1,3 +1,3 @@
-function graves:grave/clear_nearest
+function graves:grave/clear/nearest
 
 function graves:settings

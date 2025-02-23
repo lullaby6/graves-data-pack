@@ -13,7 +13,9 @@
 
 Graves to save items when players die!
 
-This Data-Pack is not compatible with the `keepInventory` gamerule in true.
+This Data-Pack is not compatible with the `keepInventory` and `doImmediateRespawn` gamerules in true.
+
+If you are updating this Data-PAck please run the command `function graves:settings/reset`.
 
 Version: `1.21.X`
 
@@ -45,16 +47,11 @@ Enable grave spawning on death:
 
 Settings:
 
-- Grave Owner
-- Graves Despawn
-- Glowing Graves
-- Clear Nearest Grave
-- Clear All Graves
-- Reset Settings
-
 ```mcfunction
 /function graves:settings
 ```
+
+![settings](https://raw.githubusercontent.com/lullaby6/graves-data-pack/refs/heads/main/images/settings.png)
 
 Set graves despawn delay (20 ticks = 1 second):
 

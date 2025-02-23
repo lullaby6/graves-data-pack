@@ -12,3 +12,4 @@ execute unless score .id graves.player.id matches 1.. run scoreboard players set
 scoreboard objectives add graves.player.grave_disabled trigger
 
 gamerule keepInventory false
+gamerule doImmediateRespawn false
