@@ -71,7 +71,7 @@ Loot all graves:
 /function graves:grave/loot/all
 ```
 
-Clear narest grave:
+Clear nearest grave:
 
 ```mcfunction
 /function graves:grave/clear/nearest
@@ -81,6 +81,18 @@ Clear all graves:
 
 ```mcfunction
 /function graves:grave/clear/all
+```
+
+Disable graves for a player:
+
+```mcfunction
+/tag <player> add graves.player.disabled
+```
+
+Enable graves for a player:
+
+```mcfunction
+/tag <player> remove graves.player.disabled
 ```
 
 Disable:

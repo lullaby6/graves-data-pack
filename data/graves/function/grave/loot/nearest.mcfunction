@@ -1,1 +1,1 @@
-execute as @n[tag=graves.interaction] at @s run function graves:loot/spawn
+execute as @n[tag=graves.grave] at @s run function graves:loot/spawn
