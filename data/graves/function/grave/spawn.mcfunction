@@ -1,0 +1,1 @@
+$execute align xyz run function graves:grave/entity/interaction/summon {"id":$(id)}

@@ -1,0 +1,1 @@
+$execute summon minecraft:interaction run function graves:grave/entity/interaction/data {"id":$(id)}

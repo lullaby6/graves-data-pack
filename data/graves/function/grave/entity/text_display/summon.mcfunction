@@ -1,0 +1,1 @@
+$execute summon minecraft:text_display run function graves:grave/entity/text_display/data {"id":$(id)}

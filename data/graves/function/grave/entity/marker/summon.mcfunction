@@ -1,0 +1,1 @@
+$execute summon minecraft:marker run function graves:grave/entity/marker/data {"id":$(id)}

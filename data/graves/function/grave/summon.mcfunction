@@ -1,1 +1,0 @@
-$execute summon minecraft:interaction align xyz run function graves:grave/data {"id":$(id)}
