@@ -5,7 +5,7 @@
       "conditions": {
         "entity": {
           "type": "interaction",
-          "nbt": "{Tags:[\"graves.interaction\"]}"
+          "nbt": "{Tags:[\"graves.grave\"]}"
         }
       }
     }

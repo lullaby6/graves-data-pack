@@ -1,0 +1,1 @@
+$summon experience_orb ~ ~ ~ {Invulnerable:1b,Value:$(xp)}

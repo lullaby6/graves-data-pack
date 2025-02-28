@@ -34,13 +34,13 @@ Please report any bug/issues to the [Discord Server](https://discord.gg/5UdcDa5x
 Disable grave spawning on death:
 
 ```mcfunction
-/trigger graves.player.grave_disabled set 1
+/trigger graves.player.disabled set 1
 ```
 
 Enable grave spawning on death:
 
 ```mcfunction
-/trigger graves.player.grave_disabled set 0
+/trigger graves.player.disabled set 0
 ```
 
 ### Admin
@@ -71,7 +71,7 @@ Loot all graves:
 /function graves:grave/loot/all
 ```
 
-Clear narest grave:
+Clear nearest grave:
 
 ```mcfunction
 /function graves:grave/clear/nearest
@@ -81,6 +81,18 @@ Clear all graves:
 
 ```mcfunction
 /function graves:grave/clear/all
+```
+
+Disable graves for a player:
+
+```mcfunction
+/tag <player> add graves.player.disabled
+```
+
+Enable graves for a player:
+
+```mcfunction
+/tag <player> remove graves.player.disabled
 ```
 
 Disable:
