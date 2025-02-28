@@ -1,5 +1,4 @@
 execute if score @s graves.player.id matches 1.. run return fail
-execute if entity @s[tag=graves.player.load] run return fail
 
 scoreboard players add . graves.player.id 1
 
