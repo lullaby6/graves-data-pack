@@ -37,9 +37,9 @@ tellraw @s ""
 tellraw @s [{"text":"- ","color":"gray"},{"text":"Clear Nearest Grave","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to clear nearest grave"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/clear_nearest_grave"}}]
 tellraw @s [{"text":"- ","color":"gray"},{"text":"Clear All Graves","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to clear all graves"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/clear_all_graves"}}]
 
-tellraw @s ""
+# tellraw @s ""
 
-tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset All Players","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to reset all players"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/reset_all_players"}}]
+# tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset All Players","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to reset all players"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/reset_all_players"}}]
 
 tellraw @s ""
 
