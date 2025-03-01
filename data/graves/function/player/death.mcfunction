@@ -9,7 +9,7 @@ execute unless score @s graves.player.id matches 1.. run return fail
 execute unless entity @e[type=item,distance=..6,tag=!graves.grave.item] run return fail
 
 
-execute store result storage graves:main player_id int 1 run scoreboard players get . graves.player.id
+execute store result storage graves:main player_id int 1 run scoreboard players get @s graves.player.id
 
 scoreboard players add . graves.grave.id 1
 execute store result storage graves:main grave_id int 1 run scoreboard players get . graves.grave.id

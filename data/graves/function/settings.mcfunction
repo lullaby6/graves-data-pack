@@ -1,6 +1,7 @@
 function graves:utils/clear_chat
 
 tellraw @s [{"text":"==========[ ","color":"gray"},{"text":"GRAVES","color":"white","bold":true},{"text":" ]==========","color":"gray"}]
+tellraw @s [{"color":"gray","text":"Version: "},{"color":"aqua","text":"v2.0.1"}]
 
 tellraw @s ""
 
@@ -14,7 +15,7 @@ execute if score graves graves.settings matches 0 run tellraw @s [{"color":"gray
 execute if score despawn graves.settings matches 1 run tellraw @s [{"color":"gray","text":"- Despawn: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:settings/despawn/no"},"color":"green","hoverEvent":{"action":"show_text","value":[{"text":"Click to disable graves despawn"}]},"text":"ENABLED"}]
 execute if score despawn graves.settings matches 0 run tellraw @s [{"color":"gray","text":"- Despawn: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:settings/despawn/yes"},"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Click to enable graves despawn"}]},"text":"DISABLED"}]
 
-execute if score despawn graves.settings matches 1 run tellraw @s [{"color":"gray","text":"- Despawn Delay: "},{"color":"green","score":{"name":"despawn_delay","objective":"graves.settings"}}]
+execute if score despawn graves.settings matches 1 run tellraw @s [{"color":"gray","text":"- Despawn Delay: "},{"color":"green","bold":true,"score":{"name":"despawn_delay","objective":"graves.settings"}}]
 
 execute if score owner graves.settings matches 1 run tellraw @s [{"color":"gray","text":"- Owner: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:settings/owner/no"},"color":"green","hoverEvent":{"action":"show_text","value":[{"text":"Click to disable graves owner"}]},"text":"ENABLED"}]
 execute if score owner graves.settings matches 0 run tellraw @s [{"color":"gray","text":"- Owner: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:settings/owner/yes"},"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Click to enable graves owner"}]},"text":"DISABLED"}]
@@ -38,9 +39,14 @@ tellraw @s [{"text":"- ","color":"gray"},{"text":"Clear All Graves","color":"red
 
 tellraw @s ""
 
-tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset Settings","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to reset settings"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/reset"}}]
+tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset All Players","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to reset all players"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/reset_all_players"}}]
+
 tellraw @s ""
 
-tellraw @s [{"text":"==============================","color":"gray"}]
+tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset Settings","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to reset settings"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/reset"}}]
+
+tellraw @s ""
+
+tellraw @s [{"text":"===========","color":"gray"},{"text":"======","color":"gray"},{"text":"===========","color":"gray"}]
 
 playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ .5 2
