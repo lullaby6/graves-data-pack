@@ -1,7 +1,7 @@
 function graves:utils/clear_chat
 
 tellraw @s [{"text":"==========[ ","color":"gray"},{"text":"GRAVES","color":"white","bold":true},{"text":" ]==========","color":"gray"}]
-tellraw @s [{"color":"gray","text":"Version: "},{"color":"aqua","text":"v2.0.3"}]
+tellraw @s [{"color":"gray","text":"Version: "},{"color":"aqua","text":"v2.1.1"}]
 
 tellraw @s ""
 
@@ -22,6 +22,15 @@ execute if score owner graves.settings matches 0 run tellraw @s [{"color":"gray"
 
 execute if score glowing graves.settings matches 1 run tellraw @s [{"color":"gray","text":"- Glowing: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:settings/glowing/no"},"color":"green","hoverEvent":{"action":"show_text","value":[{"text":"Click to disable graves glowing"}]},"text":"ENABLED"}]
 execute if score glowing graves.settings matches 0 run tellraw @s [{"color":"gray","text":"- Glowing: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:settings/glowing/yes"},"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Click to enable graves glowing"}]},"text":"DISABLED"}]
+
+execute if score display_name graves.settings matches 1 run tellraw @s [{"color":"gray","text":"- Display Name: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:settings/display_name/disable"},"color":"green","hoverEvent":{"action":"show_text","value":[{"text":"Click to disable graves display name"}]},"text":"ENABLED"}]
+execute if score display_name graves.settings matches 0 run tellraw @s [{"color":"gray","text":"- Display Name: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:settings/display_name/enable"},"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Click to enable graves display name"}]},"text":"DISABLED"}]
+
+execute if score xp graves.settings matches 1 run tellraw @s [{"color":"gray","text":"- XP: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:settings/xp/disable"},"color":"green","hoverEvent":{"action":"show_text","value":[{"text":"Click to disable graves saves XP"}]},"text":"ENABLED"}]
+execute if score xp graves.settings matches 0 run tellraw @s [{"color":"gray","text":"- XP: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:settings/xp/enable"},"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Click to enable graves saves XP"}]},"text":"DISABLED"}]
+
+execute if score death_message graves.settings matches 1 run tellraw @s [{"color":"gray","text":"- Death Message: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:settings/death_message/disable"},"color":"green","hoverEvent":{"action":"show_text","value":[{"text":"Click to disable death messages"}]},"text":"ENABLED"}]
+execute if score death_message graves.settings matches 0 run tellraw @s [{"color":"gray","text":"- Death Message: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:settings/death_message/enable"},"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Click to enable death messages"}]},"text":"DISABLED"}]
 
 tellraw @s ""
 

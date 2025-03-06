@@ -1,0 +1,9 @@
+scoreboard players reset @s graves.player.last_grave
+
+execute if score @s graves.player.death.dimension matches 1 run return run tellraw @s [{"color":"gray","text":"Your last grave is at "},{"color":"green","score":{"name":"@s","objective":"graves.player.death.pos.x"}}," ",{"color":"green","score":{"name":"@s","objective":"graves.player.death.pos.y"}}," ",{"color":"green","score":{"name":"@s","objective":"graves.player.death.pos.z"}},{"color":"gray","text":" in the Overworld."}]
+
+execute if score @s graves.player.death.dimension matches 2 run return run tellraw @s [{"color":"gray","text":"Your last grave is at "},{"color":"green","score":{"name":"@s","objective":"graves.player.death.pos.x"}}," ",{"color":"green","score":{"name":"@s","objective":"graves.player.death.pos.y"}}," ",{"color":"green","score":{"name":"@s","objective":"graves.player.death.pos.z"}},{"color":"gray","text":" in the Nether."}]
+
+execute if score @s graves.player.death.dimension matches 3 run return run tellraw @s [{"color":"gray","text":"Your last grave is at "},{"color":"green","score":{"name":"@s","objective":"graves.player.death.pos.x"}}," ",{"color":"green","score":{"name":"@s","objective":"graves.player.death.pos.y"}}," ",{"color":"green","score":{"name":"@s","objective":"graves.player.death.pos.z"}},{"color":"gray","text":" in the End."}]
+
+tellraw @s [{"color":"gray","text":"Your last grave is at "},{"color":"green","score":{"name":"@s","objective":"graves.player.death.pos.x"}}," ",{"color":"green","score":{"name":"@s","objective":"graves.player.death.pos.y"}}," ",{"color":"green","score":{"name":"@s","objective":"graves.player.death.pos.z"}},{"color":"gray","text":"."}]

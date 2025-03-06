@@ -23,6 +23,9 @@ $execute as @e[type=experience_orb,distance=..6] run function graves:grave/entit
 
 tag @s remove graves.grave.new
 
-execute if block ~ ~ ~ lava run function graves:grave/entity/interaction/lava
+execute unless dimension minecraft:the_end if block ~ ~-0.1 ~ air run function graves:grave/entity/interaction/prevent/air
+execute unless block ~ ~ ~ air run function graves:grave/entity/interaction/prevent/block
+execute if block ~ ~ ~ water if block ~ ~-0.1 ~ water run function graves:grave/entity/interaction/prevent/water
+execute if block ~ ~ ~ lava run function graves:grave/entity/interaction/prevent/lava
 
 execute if dimension minecraft:the_end if score @s graves.grave.pos.y matches ..1 run tp ~ 1 ~

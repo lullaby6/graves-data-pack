@@ -9,6 +9,12 @@ execute unless score @s graves.player.id matches 1.. run return fail
 execute unless entity @e[type=item,distance=..6,tag=!graves.grave.item] run return fail
 
 
+scoreboard players reset @s graves.player.death.dimension
+execute if dimension minecraft:overworld run scoreboard players set @s graves.player.death.dimension 1
+execute if dimension minecraft:the_nether run scoreboard players set @s graves.player.death.dimension 2
+execute if dimension minecraft:the_end run scoreboard players set @s graves.player.death.dimension 3
+
+
 execute store result score @s graves.player.death.pos.x run data get entity @s Pos[0]
 execute store result score @s graves.player.death.pos.y run data get entity @s Pos[1]
 execute store result score @s graves.player.death.pos.z run data get entity @s Pos[2]
@@ -32,3 +38,7 @@ data remove storage graves:main grave_id
 data remove storage graves:main x
 data remove storage graves:main y
 data remove storage graves:main z
+
+
+
+execute if score death_message graves.settings matches 1 run function graves:player/death_message
