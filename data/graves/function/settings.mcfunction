@@ -1,7 +1,7 @@
 function graves:utils/clear_chat
 
 tellraw @s [{"text":"==========[ ","color":"gray"},{"text":"GRAVES","color":"white","bold":true},{"text":" ]==========","color":"gray"}]
-tellraw @s [{"color":"gray","text":"Version: "},{"color":"aqua","text":"v2.1.1"}]
+tellraw @s [{"color":"gray","text":"Version: "},{"color":"aqua","text":"v2.1.2"}]
 
 tellraw @s ""
 
@@ -15,7 +15,7 @@ execute if score graves graves.settings matches 0 run tellraw @s [{"color":"gray
 execute if score despawn graves.settings matches 1 run tellraw @s [{"color":"gray","text":"- Despawn: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:settings/despawn/no"},"color":"green","hoverEvent":{"action":"show_text","value":[{"text":"Click to disable graves despawn"}]},"text":"ENABLED"}]
 execute if score despawn graves.settings matches 0 run tellraw @s [{"color":"gray","text":"- Despawn: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:settings/despawn/yes"},"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Click to enable graves despawn"}]},"text":"DISABLED"}]
 
-execute if score despawn graves.settings matches 1 run tellraw @s [{"color":"gray","text":"- Despawn Delay: "},{"color":"aqua","bold":true,"text":"- ","hoverEvent":{"action":"show_text","value":[{"text":"Click to remove a minute from despawn delay"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/despawn_delay/remove"}},{"color":"green","bold":true,"score":{"name":"despawn_delay","objective":"graves.settings"},"hoverEvent":{"action":"show_text","value":[{"text":"To change run: /scoreboard players set despawn_delay graves.settings <ticks>"}]}},{"color":"aqua","bold":true,"text":" +","hoverEvent":{"action":"show_text","value":[{"text":"Click to add a minute to despawn delay"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/despawn_delay/add"}}]
+execute if score despawn graves.settings matches 1 run tellraw @s [{"color":"gray","text":"- Despawn Delay: "},{"color":"aqua","bold":true,"text":"- ","hoverEvent":{"action":"show_text","value":[{"text":"Click to remove a minute from despawn delay"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/despawn_delay/remove"}},{"color":"green","bold":true,"score":{"name":"despawn_delay","objective":"graves.settings"},"hoverEvent":{"action":"show_text","value":[{"text":"To change click or run: /scoreboard players set despawn_delay graves.settings <ticks>"}]},"clickEvent":{"action":"suggest_command","value":"/scoreboard players set despawn_delay graves.settings <ticks>"}},{"color":"aqua","bold":true,"text":" +","hoverEvent":{"action":"show_text","value":[{"text":"Click to add a minute to despawn delay"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/despawn_delay/add"}}]
 
 execute if score owner graves.settings matches 1 run tellraw @s [{"color":"gray","text":"- Owner: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:settings/owner/no"},"color":"green","hoverEvent":{"action":"show_text","value":[{"text":"Click to disable graves owner"}]},"text":"ENABLED"}]
 execute if score owner graves.settings matches 0 run tellraw @s [{"color":"gray","text":"- Owner: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:settings/owner/yes"},"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Click to enable graves owner"}]},"text":"DISABLED"}]
