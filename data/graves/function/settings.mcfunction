@@ -39,7 +39,7 @@ tellraw @s {"color":"gray","text":"Commands:","underlined":true}
 tellraw @s ""
 
 tellraw @s [{"text":"- ","color":"gray"},{"text":"Loot Nearest Grave","color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Click to loot the nearest grave"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/loot_nearest_grave"}}]
-tellraw @s [{"text":"- ","color":"gray"},{"text":"Loot All Grave","color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Clicck to loot all graves"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/loot_all_graves"}}]
+tellraw @s [{"text":"- ","color":"gray"},{"text":"Loot All Graves","color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Clicck to loot all graves"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/loot_all_graves"}}]
 
 tellraw @s ""
 

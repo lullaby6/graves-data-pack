@@ -1,7 +1,7 @@
 tag @s add graves.grave.block_display
 $tag @s add graves.grave.block_display.$(grave_id)
 
-$ride @s mount @n[tag=graves.grave.$(grave_id)]
+$ride @s mount @n[scores={graves.grave.id=$(grave_id)}]
 
 data modify entity @s transformation set value {left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,0f,-0.5f],scale:[1.0f,0.875f,1.0f]}
 
