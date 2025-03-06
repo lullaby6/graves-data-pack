@@ -1,7 +1,7 @@
 function graves:utils/clear_chat
 
 tellraw @s [{"text":"==========[ ","color":"gray"},{"text":"GRAVES","color":"white","bold":true},{"text":" ]==========","color":"gray"}]
-tellraw @s [{"color":"gray","text":"Version: "},{"color":"aqua","text":"v2.1.2"}]
+tellraw @s [{"color":"gray","text":"Version: "},{"color":"aqua","text":"v2.1.3"}]
 
 tellraw @s ""
 
