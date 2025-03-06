@@ -15,7 +15,9 @@ Graves to save items when players die!
 
 This Data-Pack is not compatible with the `keepInventory` and `doImmediateRespawn` gamerules in true.
 
-If you are updating this Data-PAck please run the command `function graves:settings/reset`.
+If you are updating this Data-Pack please run the command `function graves:settings/reset`.
+
+The graves in the end's void generate at Y = 1, and the graves that are under the lava will rise to the surface of the lava!
 
 Version: `1.21.X`
 
