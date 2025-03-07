@@ -1,4 +1,4 @@
-scoreboard players set display_name graves.settings 0
+scoreboard players set name_visible graves.settings 0
 
 function graves:settings
 

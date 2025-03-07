@@ -97,6 +97,12 @@ Enable graves for a player:
 /tag <player> remove graves.player.disabled
 ```
 
+Prevent item/experience orb stored in a grave:
+
+```mcfunction
+/tag @n[type=item] graves.bypass
+```
+
 Disable:
 
 ```mcfunction
