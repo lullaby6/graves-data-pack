@@ -17,8 +17,11 @@ scoreboard objectives add graves.player.death.dimension dummy
 scoreboard objectives add graves.player.death.pos.x dummy
 scoreboard objectives add graves.player.death.pos.y dummy
 scoreboard objectives add graves.player.death.pos.z dummy
+
 scoreboard objectives add graves.player.disabled trigger
 scoreboard objectives add graves.player.last_grave trigger
+scoreboard objectives add graves.player.nearest_grave trigger
+scoreboard objectives add graves.player.all_graves trigger
 
 gamerule keepInventory false
 gamerule doImmediateRespawn false

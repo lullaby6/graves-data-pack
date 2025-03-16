@@ -1,4 +1,4 @@
-function graves:grave/loot/effect
+execute at @s run function graves:grave/loot/effect
 
 function graves:grave/loot/spawn
 

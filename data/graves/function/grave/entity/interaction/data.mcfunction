@@ -23,7 +23,7 @@ $execute as @e[type=experience_orb,tag=!graves.bypass,distance=..6] run function
 
 tag @s remove graves.grave.new
 
-execute unless dimension minecraft:the_end if block ~ ~-0.1 ~ air run function graves:grave/entity/interaction/prevent/air
+execute if block ~ ~-0.1 ~ air run function graves:grave/entity/interaction/prevent/air
 execute unless block ~ ~ ~ air run function graves:grave/entity/interaction/prevent/block
 execute if block ~ ~ ~ water if block ~ ~-0.1 ~ water run function graves:grave/entity/interaction/prevent/water
 execute if block ~ ~ ~ lava run function graves:grave/entity/interaction/prevent/lava
