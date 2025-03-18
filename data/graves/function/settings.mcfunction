@@ -1,4 +1,4 @@
-function graves:utils/clear_chat
+# function graves:utils/clear_chat
 
 tellraw @s [{"text":"==========[ ","color":"gray"},{"text":"GRAVES","color":"white","bold":true},{"text":" ]==========","color":"gray"}]
 tellraw @s [{"color":"gray","text":"Version: "},{"color":"aqua","text":"v2.1.5"}]
@@ -42,23 +42,23 @@ tellraw @s {"color":"gray","text":"Commands:","underlined":true}
 tellraw @s ""
 
 tellraw @s [{"text":"- ","color":"gray"},{"text":"Loot Nearest Grave","color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Click to loot the nearest grave"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/loot_nearest_grave"}}]
-tellraw @s [{"text":"- ","color":"gray"},{"text":"Loot Nearest Grave In Inventory","color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Click to loot the nearest grave"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/loot_nearest_grave_inventory"}}]
+tellraw @s [{"text":"- ","color":"gray"},{"text":"Loot Nearest Grave In Inventory","color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Click to loot the nearest grave in inventory"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/loot_nearest_grave_inventory"}}]
 tellraw @s [{"text":"- ","color":"gray"},{"text":"Loot All Graves","color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Clicck to loot all graves"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/loot_all_graves"}}]
 
-tellraw @s ""
+# tellraw @s ""
 
 tellraw @s [{"text":"- ","color":"gray"},{"text":"Clear Nearest Grave","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to clear nearest grave"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/clear_nearest_grave"}}]
 tellraw @s [{"text":"- ","color":"gray"},{"text":"Clear All Graves","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to clear all graves"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/clear_all_graves"}}]
 
-tellraw @s ""
+# tellraw @s ""
 
-tellraw @s [{"text":"- ","color":"gray"},{"text":"TP To Nearest Grave","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to clear nearest grave"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/tp_nearest"}}]
+tellraw @s [{"text":"- ","color":"gray"},{"text":"TP To Nearest Grave","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to teleport to nearest grave"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/tp_nearest"}}]
 
 # tellraw @s ""
 
 # tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset All Players","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to reset all players"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/reset_all_players"}}]
 
-tellraw @s ""
+# tellraw @s ""
 
 tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset Settings","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click to reset settings"}]},"clickEvent":{"action":"run_command","value":"/function graves:settings/reset"}}]
 
