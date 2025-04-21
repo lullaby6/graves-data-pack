@@ -1,4 +1,4 @@
-scoreboard players set name graves.settings 0
+scoreboard players set name graves.config 0
 
 function graves:settings
 

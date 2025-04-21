@@ -1,4 +1,4 @@
-scoreboard players set death_message graves.settings 0
+scoreboard players set death_message graves.config 0
 
 function graves:settings
 

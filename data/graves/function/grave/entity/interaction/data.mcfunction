@@ -17,7 +17,7 @@ forceload add ~ ~
 
 $function graves:grave/entity/marker/summon {"player_id":$(player_id),"grave_id":$(grave_id)}
 $function graves:grave/entity/block_display/summon {"player_id":$(player_id),"grave_id":$(grave_id)}
-$execute if score name graves.settings matches 1 run function graves:grave/entity/text_display/summon {"player_id":$(player_id),"grave_id":$(grave_id)}
+$execute if score name graves.config matches 1 run function graves:grave/entity/text_display/summon {"player_id":$(player_id),"grave_id":$(grave_id)}
 
 $execute as @e[type=experience_orb,tag=!graves.bypass,distance=..6] run function graves:grave/entity/experience_orb/save {"player_id":$(player_id),"grave_id":$(grave_id)}
 

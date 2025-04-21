@@ -1,4 +1,4 @@
-scoreboard players set despawn graves.settings 0
+scoreboard players set despawn graves.config 0
 
 function graves:settings
 

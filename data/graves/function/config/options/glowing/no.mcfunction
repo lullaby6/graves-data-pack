@@ -1,4 +1,4 @@
-scoreboard players set glowing graves.settings 0
+scoreboard players set glowing graves.config 0
 
 function graves:settings
 

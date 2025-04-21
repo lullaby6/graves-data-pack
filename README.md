@@ -13,7 +13,7 @@
 
 Graves to save items when players die!
 
-This Data-Pack is not compatible with the `keepInventory` and `doImmediateRespawn` gamerules in true.
+Not compatible with the `keepInventory` and `doImmediateRespawn` gamerules in true.
 
 If you are updating this Data-Pack please run the command `function graves:settings/reset`.
 
@@ -43,12 +43,10 @@ Settings:
 /function graves:settings
 ```
 
-![settings](https://raw.githubusercontent.com/lullaby6/graves-data-pack/refs/heads/main/images/settings.png)
-
 Set graves despawn delay (20 ticks = 1 second):
 
 ```mcfunction
-/scoreboard players set despawn_delay graves.settings <ticks>
+/scoreboard players set despawn_delay graves.config <ticks>
 ```
 
 Loot narest grave:
@@ -91,18 +89,6 @@ Prevent item/experience orb stored in a grave:
 
 ```mcfunction
 /tag @n[type=item] graves.bypass
-```
-
-Disable:
-
-```mcfunction
-/datapack disable "file/graves.zip"
-```
-
-Enable:
-
-```mcfunction
-/datapack enable "file/graves.zip"
 ```
 
 ## 🪪 License

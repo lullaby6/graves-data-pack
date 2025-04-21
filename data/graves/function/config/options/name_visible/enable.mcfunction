@@ -1,4 +1,4 @@
-scoreboard players set name_visible graves.settings 1
+scoreboard players set name_visible graves.config 1
 
 function graves:settings
 

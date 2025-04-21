@@ -2,7 +2,7 @@ scoreboard players reset @s graves.player.death
 
 execute unless score @s graves.player.id matches 1.. run function graves:player/load
 
-execute if score graves graves.settings matches 0 run return fail
+execute if score graves graves.config matches 0 run return fail
 execute if score @s graves.player.disabled matches 1 run return fail
 execute if entity @s[tag=graves.player.disabled] run return fail
 execute unless score @s graves.player.id matches 1.. run return fail
@@ -41,4 +41,4 @@ data remove storage graves:main z
 
 
 
-execute if score death_message graves.settings matches 1 run function graves:player/death_message
+execute if score death_message graves.config matches 1 run function graves:player/death_message
