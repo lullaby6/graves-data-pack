@@ -19,16 +19,6 @@ If you are updating this Data-Pack please run the command `function graves:setti
 
 The graves in the end's void generate at Y = 1, and the graves that are under the lava will rise to the surface of the lava!
 
-Version: `1.21.X`
-
-## 📂 Installation
-
-Move the downloaded file in the path `.minecraft/saves/[world]/datapacks`
-
-## 👾 Bugs/Issues
-
-Please report any bug/issues to the [Discord Server](https://discord.gg/5UdcDa5xNC) in the `bugs` channel, or create a issue in the [Github Repostiroy](https://github.com/lullaby6/graves-data-pack/issues), or a comment in [Planet Minecraft](https://www.planetminecraft.com/data-pack/graves-6529892/).
-
 ## ⌨️ Commands
 
 ### Player
@@ -117,4 +107,4 @@ Enable:
 
 ## 🪪 License
 
-[MIT](https://github.com/lullaby6/graves-data-pack/blob/main/LICENSE)
+[Limited Embed License v1.0](https://github.com/lullaby6/graves-data-pack/blob/main/LICENSE)
