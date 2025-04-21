@@ -1,3 +1,3 @@
 function graves:grave/loot/all
 
-function graves:settings
+function graves:config

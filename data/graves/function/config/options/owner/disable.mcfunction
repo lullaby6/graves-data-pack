@@ -1,3 +1,3 @@
 scoreboard players set owner graves.config 0
 
-function graves:settings
+function graves:config

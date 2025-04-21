@@ -1,3 +1,5 @@
+scoreboard players set load graves.config 1
+
 scoreboard players set graves graves.config 1
 scoreboard players set despawn graves.config 0
 scoreboard players set despawn_delay graves.config 86400
@@ -7,7 +9,3 @@ scoreboard players set name_visible graves.config 1
 scoreboard players set name graves.config 1
 scoreboard players set xp graves.config 1
 scoreboard players set death_message graves.config 0
-
-execute if score load graves.config matches 1 run function graves:settings
-
-scoreboard players set load graves.config 1
