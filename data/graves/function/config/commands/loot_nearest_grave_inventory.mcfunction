@@ -1,3 +1,3 @@
 function graves:grave/loot/nearest_here
 
-function graves:config
+function graves:config/commands

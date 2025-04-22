@@ -1,3 +1,3 @@
 function graves:grave/clear/all
 
-function graves:config
+function graves:config/commands

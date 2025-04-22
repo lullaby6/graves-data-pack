@@ -1,3 +1,3 @@
 function graves:config/load/options
 
-function graves:config
+function graves:config/commands

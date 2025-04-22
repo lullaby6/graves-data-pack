@@ -1,4 +1,4 @@
-# function graves:utils/clear_chat
+function graves:utils/clear_chat
 
 tellraw @s [{"text":"==========[ ","color":"gray"},{"text":"Graves","color":"white","bold":true},{"text":" ]==========","color":"gray"}]
 tellraw @s [{"color":"gray","text":"Version: "},{"color":"aqua","text":"v2.1.5"}]
@@ -15,7 +15,7 @@ execute if score graves graves.config matches 0 run tellraw @s [{"color":"gray",
 execute if score despawn graves.config matches 1 run tellraw @s [{"color":"gray","text":"- Despawn: "},{"bold":true,"click_event":{"action":"run_command","command":"/function graves:config/options/despawn/disable"},"color":"green","hover_event":{"action":"show_text","value":[{"text":"Click to disable graves despawn"}]},"text":"ENABLED"}]
 execute if score despawn graves.config matches 0 run tellraw @s [{"color":"gray","text":"- Despawn: "},{"bold":true,"click_event":{"action":"run_command","command":"/function graves:config/options/despawn/enable"},"color":"gray","hover_event":{"action":"show_text","value":[{"text":"Click to enable graves despawn"}]},"text":"DISABLED"}]
 
-execute if score despawn graves.config matches 1 run tellraw @s [{"color":"gray","text":"- Despawn Delay: "},{"color":"aqua","bold":true,"text":"- ","hover_event":{"action":"show_text","value":[{"text":"Click to remove a minute from despawn delay"}]},"click_event":{"action":"run_command","command":"/function graves:config/options/despawn_delay/remove"}},{"color":"green","bold":true,"score":{"name":"despawn_delay","objective":"graves.config"},"hover_event":{"action":"show_text","value":[{"text":"To change click or run: /scoreboard players set despawn_delay graves.config <ticks>"}]},"click_event":{"action":"suggest_command","value":"/scoreboard players set despawn_delay graves.config "}},{"color":"aqua","bold":true,"text":" +","hover_event":{"action":"show_text","value":[{"text":"Click to add a minute to despawn delay"}]},"click_event":{"action":"run_command","command":"/function graves:config/options/despawn_delay/add"}}]
+execute if score despawn graves.config matches 1 run tellraw @s [{"color":"gray","text":"- Despawn Delay: "},{"color":"aqua","bold":true,"text":"- ","hover_event":{"action":"show_text","value":[{"text":"Click to remove a minute from despawn delay"}]},"click_event":{"action":"run_command","command":"/function graves:config/options/despawn_delay/remove"}},{"color":"green","bold":true,"score":{"name":"despawn_delay","objective":"graves.config"},"hover_event":{"action":"show_text","value":[{"text":"To change click or run: /scoreboard players set despawn_delay graves.config <ticks>"}]},"click_event":{"action":"suggest_command","command":"/scoreboard players set despawn_delay graves.config "}},{"color":"aqua","bold":true,"text":" +","hover_event":{"action":"show_text","value":[{"text":"Click to add a minute to despawn delay"}]},"click_event":{"action":"run_command","command":"/function graves:config/options/despawn_delay/add"}}]
 
 execute if score owner graves.config matches 1 run tellraw @s [{"color":"gray","text":"- Owner: "},{"bold":true,"click_event":{"action":"run_command","command":"/function graves:config/options/owner/disable"},"color":"green","hover_event":{"action":"show_text","value":[{"text":"Click to disable graves owner"}]},"text":"ENABLED"}]
 execute if score owner graves.config matches 0 run tellraw @s [{"color":"gray","text":"- Owner: "},{"bold":true,"click_event":{"action":"run_command","command":"/function graves:config/options/owner/enable"},"color":"gray","hover_event":{"action":"show_text","value":[{"text":"Click to enable graves owner"}]},"text":"DISABLED"}]
@@ -34,33 +34,6 @@ execute if score xp graves.config matches 0 run tellraw @s [{"color":"gray","tex
 
 execute if score death_message graves.config matches 1 run tellraw @s [{"color":"gray","text":"- Death Message: "},{"bold":true,"click_event":{"action":"run_command","command":"/function graves:config/options/death_message/disable"},"color":"green","hover_event":{"action":"show_text","value":[{"text":"Click to disable death messages"}]},"text":"ENABLED"}]
 execute if score death_message graves.config matches 0 run tellraw @s [{"color":"gray","text":"- Death Message: "},{"bold":true,"click_event":{"action":"run_command","command":"/function graves:config/options/death_message/enable"},"color":"gray","hover_event":{"action":"show_text","value":[{"text":"Click to enable death messages"}]},"text":"DISABLED"}]
-
-tellraw @s ""
-
-tellraw @s {"color":"gray","text":"Commands:","underlined":true}
-
-tellraw @s ""
-
-tellraw @s [{"text":"- ","color":"gray"},{"text":"Loot Nearest Grave","color":"green","hover_event":{"action":"show_text","contents":[{"text":"Click to loot the nearest grave"}]},"click_event":{"action":"run_command","command":"/function graves:config/commands/loot_nearest_grave"}}]
-tellraw @s [{"text":"- ","color":"gray"},{"text":"Loot Nearest Grave In Inventory","color":"green","hover_event":{"action":"show_text","contents":[{"text":"Click to loot the nearest grave in inventory"}]},"click_event":{"action":"run_command","command":"/function graves:config/commands/loot_nearest_grave_inventory"}}]
-tellraw @s [{"text":"- ","color":"gray"},{"text":"Loot All Graves","color":"green","hover_event":{"action":"show_text","contents":[{"text":"Clicck to loot all graves"}]},"click_event":{"action":"run_command","command":"/function graves:config/commands/loot_all_graves"}}]
-
-# tellraw @s ""
-
-tellraw @s [{"text":"- ","color":"gray"},{"text":"Clear Nearest Grave","color":"red","hover_event":{"action":"show_text","contents":[{"text":"Click to clear nearest grave"}]},"click_event":{"action":"run_command","command":"/function graves:config/commands/clear_nearest_grave"}}]
-tellraw @s [{"text":"- ","color":"gray"},{"text":"Clear All Graves","color":"red","hover_event":{"action":"show_text","contents":[{"text":"Click to clear all graves"}]},"click_event":{"action":"run_command","command":"/function graves:config/commands/clear_all_graves"}}]
-
-# tellraw @s ""
-
-tellraw @s [{"text":"- ","color":"gray"},{"text":"TP To Nearest Grave","color":"red","hover_event":{"action":"show_text","contents":[{"text":"Click to teleport to nearest grave"}]},"click_event":{"action":"run_command","command":"/function graves:config/commands/tp_nearest"}}]
-
-# tellraw @s ""
-
-# tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset All Players","color":"red","hover_event":{"action":"show_text","contents":[{"text":"Click to reset all players"}]},"click_event":{"action":"run_command","command":"/function graves:config/commands/reset/players"}}]
-
-# tellraw @s ""
-
-tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset Options","color":"red","hover_event":{"action":"show_text","contents":[{"text":"Click to reset options"}]},"click_event":{"action":"run_command","command":"/function graves:config/commands/reset/options"}}]
 
 tellraw @s ""
 
