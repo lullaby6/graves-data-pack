@@ -6,8 +6,9 @@ $execute store result storage graves:trigger_nearest_grave data.x int 1 run data
 $execute store result storage graves:trigger_nearest_grave data.y int 1 run data get entity @n[scores={graves.grave.player.id=$(player_id)}] Pos[1]
 $execute store result storage graves:trigger_nearest_grave data.z int 1 run data get entity @n[scores={graves.grave.player.id=$(player_id)}] Pos[2]
 
-$execute at @n[scores={graves.grave.player.id=$(player_id)}] if dimension minecraft:overworld run data modify storage graves:trigger_nearest_grave data.dimension set value "minecraft:overworld"
-$execute at @n[scores={graves.grave.player.id=$(player_id)}] if dimension minecraft:the_nether run data modify storage graves:trigger_nearest_grave data.dimension set value "minecraft:the_nether"
-$execute at @n[scores={graves.grave.player.id=$(player_id)}] if dimension minecraft:the_end run data modify storage graves:trigger_nearest_grave data.dimension set value "minecraft:the_end"
+data modify storage graves:trigger_nearest_grave data.dimension set value "a unknown dimension"
+$execute at @n[scores={graves.grave.player.id=$(player_id)}] if dimension minecraft:overworld run data modify storage graves:trigger_nearest_grave data.dimension set value "the Overworld"
+$execute at @n[scores={graves.grave.player.id=$(player_id)}] if dimension minecraft:the_nether run data modify storage graves:trigger_nearest_grave data.dimension set value "the Nether"
+$execute at @n[scores={graves.grave.player.id=$(player_id)}] if dimension minecraft:the_end run data modify storage graves:trigger_nearest_grave data.dimension set value "the End"
 
 function graves:player/trigger/nearest_grave/message with storage graves:trigger_nearest_grave data

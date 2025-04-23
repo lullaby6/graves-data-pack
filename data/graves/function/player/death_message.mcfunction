@@ -1,4 +1,4 @@
-scoreboard players reset @s graves.player.last_grave
+scoreboard players reset @s graves.last_grave
 
 execute if score @s graves.player.death.dimension matches 1 run return run tellraw @s [{"color":"gray","text":"Your last grave is at "},{"color":"green","score":{"name":"@s","objective":"graves.player.death.pos.x"}}," ",{"color":"green","score":{"name":"@s","objective":"graves.player.death.pos.y"}}," ",{"color":"green","score":{"name":"@s","objective":"graves.player.death.pos.z"}},{"color":"gray","text":" in the Overworld."}]
 

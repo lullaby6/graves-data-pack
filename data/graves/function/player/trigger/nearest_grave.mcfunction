@@ -1,4 +1,4 @@
-scoreboard players reset @s graves.player.nearest_grave
+scoreboard players reset @s graves.nearest_grave
 
 execute store result storage graves:trigger_nearest_grave data.player_id int 1 run scoreboard players get @s graves.player.id
 
