@@ -15,7 +15,7 @@ Graves to save items when players die!
 
 Not compatible with the `keepInventory` and `doImmediateRespawn` gamerules in true.
 
-If you are updating this Data-Pack please run the command `function graves:config/reset`.
+If you are updating to a new version please run the command `function graves:config/load/options`.
 
 The graves in the end's void generate at Y = 1, and the graves that are under the lava will rise to the surface of the lava!
 
@@ -55,40 +55,16 @@ See all graves:
 
 ### Admin
 
-Settings:
+Config options:
 
 ```mcfunction
-/function graves:config
+/function graves:config/options
 ```
 
-Set graves despawn delay (20 ticks = 1 second):
+Config commands:
 
 ```mcfunction
-/scoreboard players set despawn_delay graves.config <ticks>
-```
-
-Loot narest grave:
-
-```mcfunction
-/function graves:grave/loot/nearest
-```
-
-Loot all graves:
-
-```mcfunction
-/function graves:grave/loot/all
-```
-
-Clear nearest grave:
-
-```mcfunction
-/function graves:grave/clear/nearest
-```
-
-Clear all graves:
-
-```mcfunction
-/function graves:grave/clear/all
+/function graves:config/commands
 ```
 
 Disable graves for a player:

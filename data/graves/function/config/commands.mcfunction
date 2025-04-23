@@ -1,7 +1,7 @@
 function graves:utils/clear_chat
 
 tellraw @s [{"text":"==========[ ","color":"gray"},{"text":"Graves","color":"white","bold":true},{"text":" ]==========","color":"gray"}]
-tellraw @s [{"color":"gray","text":"Version: "},{"color":"aqua","text":"v2.1.5"}]
+tellraw @s [{"color":"gray","text":"Version: "},{"color":"aqua","text":"v2.2.0"}]
 
 tellraw @s ""
 
@@ -29,6 +29,10 @@ tellraw @s [{"text":"- ","color":"gray"},{"text":"TP To Nearest Grave","color":"
 # tellraw @s ""
 
 tellraw @s [{"text":"- ","color":"gray"},{"text":"Reset Options","color":"red","hover_event":{"action":"show_text","value":[{"text":"Click to reset options"}]},"click_event":{"action":"run_command","command":"/function graves:config/commands/reset/options"}}]
+
+tellraw @s ""
+
+tellraw @s [{"text":"- ","color":"gray"},{"text":"See Options","color":"aqua","hover_event":{"action":"show_text","value":[{"text":"Click to see options"}]},"click_event":{"action":"run_command","command":"/function graves:config/options"}}]
 
 tellraw @s ""
 

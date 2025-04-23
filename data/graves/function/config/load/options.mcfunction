@@ -9,3 +9,4 @@ scoreboard players set name_visible graves.config 1
 scoreboard players set name graves.config 1
 scoreboard players set xp graves.config 1
 scoreboard players set death_message graves.config 0
+scoreboard players set triggers graves.config 0
