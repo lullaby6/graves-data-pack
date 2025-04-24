@@ -87,4 +87,4 @@ Prevent item/experience orb stored in a grave:
 
 ## 🪪 License
 
-[Limited Embed License v1.0](https://github.com/lullaby6/graves-data-pack/blob/main/LICENSE)
+[AGPLv3](https://github.com/lullaby6/graves-data-pack/blob/main/LICENSE)
