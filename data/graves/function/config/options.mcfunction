@@ -35,6 +35,10 @@ execute if score xp graves.config matches 0 run tellraw @s [{"color":"gray","tex
 execute if score death_message graves.config matches 1 run tellraw @s [{"color":"gray","text":"- Death Message: "},{"bold":true,"click_event":{"action":"run_command","command":"/function graves:config/options/death_message/disable"},"color":"green","hover_event":{"action":"show_text","value":[{"text":"Click to disable death messages"}]},"text":"ENABLED"}]
 execute if score death_message graves.config matches 0 run tellraw @s [{"color":"gray","text":"- Death Message: "},{"bold":true,"click_event":{"action":"run_command","command":"/function graves:config/options/death_message/enable"},"color":"gray","hover_event":{"action":"show_text","value":[{"text":"Click to enable death messages"}]},"text":"DISABLED"}]
 
+execute if score triggers graves.config matches 1 run tellraw @s [{"color":"gray","text":"- Trigger: "},{"bold":true,"click_event":{"action":"run_command","command":"/function graves:config/options/triggers/disable"},"color":"green","hover_event":{"action":"show_text","value":[{"text":"Click to disable triggers"}]},"text":"ENABLED"}]
+execute if score triggers graves.config matches 0 run tellraw @s [{"color":"gray","text":"- Trigger: "},{"bold":true,"click_event":{"action":"run_command","command":"/function graves:config/options/triggers/enable"},"color":"gray","hover_event":{"action":"show_text","value":[{"text":"Click to enable triggers"}]},"text":"DISABLED"}]
+
+
 tellraw @s ""
 
 tellraw @s [{"text":"- ","color":"gray"},{"text":"See Commands","color":"aqua","hover_event":{"action":"show_text","value":[{"text":"Click to see options"}]},"click_event":{"action":"run_command","command":"/function graves:config/commands"}}]
