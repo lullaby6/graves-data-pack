@@ -1,3 +1,5 @@
+$execute unless entity @e[scores={graves.grave.player.id=$(player_id)}] run return run tellraw @s [{"color":"gray","text":"You don't have any graves."}]
+
 $data modify storage graves:trigger_nearest_grave data.player_id set value $(player_id)
 
 $execute store result storage graves:trigger_nearest_grave data.grave_id int 1 run scoreboard players get @n[scores={graves.grave.player.id=$(player_id)}] graves.grave.id

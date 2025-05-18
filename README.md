@@ -26,13 +26,13 @@ The graves in the end's void generate at Y = 1, and the graves that are under th
 Disable grave spawning on death:
 
 ```mcfunction
-/trigger graves.disabled set 1
+/trigger graves.disabled
 ```
 
 Enable grave spawning on death:
 
 ```mcfunction
-/trigger graves.disabled set 0
+/trigger graves.enabled
 ```
 
 See last grave:

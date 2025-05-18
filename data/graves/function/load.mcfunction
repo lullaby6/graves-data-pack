@@ -19,6 +19,9 @@ scoreboard objectives add graves.player.death.pos.y dummy
 scoreboard objectives add graves.player.death.pos.z dummy
 
 scoreboard objectives add graves.disabled trigger
+scoreboard objectives add graves.enabled trigger
+scoreboard objectives add graves.trigger.disabled dummy
+
 scoreboard objectives add graves.last_grave trigger
 scoreboard objectives add graves.nearest_grave trigger
 scoreboard objectives add graves.all_graves trigger
