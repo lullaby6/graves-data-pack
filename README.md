@@ -13,7 +13,7 @@
 
 Graves to save items when players die!
 
-Not compatible with the `keepInventory` and `doImmediateRespawn` gamerules in true.
+Not compatible with `doImmediateRespawn` gamerule in true.
 
 If you are updating to a new version please run the command `function graves:config/load/options`.
 
