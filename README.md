@@ -82,7 +82,7 @@ Enable graves for a player:
 Prevent item/experience orb stored in a grave:
 
 ```mcfunction
-/tag @n[type=item] graves.bypass
+/tag @n[type=minecraft:item] graves.bypass
 ```
 
 ## 🪪 License

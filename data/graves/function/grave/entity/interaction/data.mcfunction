@@ -21,7 +21,7 @@ $function graves:grave/entity/marker/summon {"player_id":$(player_id),"grave_id"
 $function graves:grave/entity/block_display/summon {"player_id":$(player_id),"grave_id":$(grave_id)}
 $execute if score name graves.config matches 1 run function graves:grave/entity/text_display/summon {"player_id":$(player_id),"grave_id":$(grave_id)}
 
-$execute as @e[type=experience_orb,tag=!graves.bypass,distance=..6] run function graves:grave/entity/experience_orb/save {"player_id":$(player_id),"grave_id":$(grave_id)}
+$execute if score xp graves.config matches 1 if score keep_inventory graves.config matches 0 as @e[type=minecraft:experience_orb,tag=!graves.bypass,distance=..10] run function graves:grave/entity/experience_orb/save {"player_id":$(player_id),"grave_id":$(grave_id)}
 
 tag @s remove graves.grave.new
 
