@@ -3,6 +3,8 @@ tag @s add graves.grave.new
 
 $tag @s add graves.grave.$(grave_id)
 $tag @s add graves.grave.player.$(player_id)
+$tag @e[tag=graves.grave.player.$(player_id).last_grave] remove graves.grave.player.$(player_id).last_grave
+$tag @s add graves.grave.player.$(player_id).last_grave
 
 data modify entity @s response set value 1b
 
