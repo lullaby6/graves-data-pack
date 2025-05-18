@@ -6,7 +6,8 @@ execute if score graves graves.config matches 0 run return fail
 execute if score @s graves.trigger.disabled matches 1 run return run tellraw @s [{"color":"gray","text":"Your graves are disabled, do /trigger graves.enabled to enable it."}]
 execute if entity @s[tag=graves.player.disabled] run return fail
 execute unless score @s graves.player.id matches 1.. run return fail
-execute unless entity @e[type=item,distance=..6,tag=!graves.grave.item] run return fail
+execute if score keep_inventory graves.config matches 0 unless function graves:player/check/loot run return fail
+execute if score keep_inventory graves.config matches 1 unless function graves:player/check/keep_inventory run return fail
 
 
 scoreboard players reset @s graves.player.death.dimension
@@ -42,3 +43,4 @@ data remove storage graves:main z
 
 
 execute if score death_message graves.config matches 1 run function graves:player/trigger/last_grave
+execute if score keep_inventory graves.config matches 1 run function graves:player/clear
