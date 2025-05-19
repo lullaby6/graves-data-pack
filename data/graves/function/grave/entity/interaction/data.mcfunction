@@ -1,6 +1,4 @@
 tag @s add graves.grave
-tag @s add graves.grave.new
-
 $tag @s add graves.grave.$(grave_id)
 $tag @s add graves.grave.player.$(player_id)
 $tag @e[tag=graves.grave.player.$(player_id).last_grave] remove graves.grave.player.$(player_id).last_grave
@@ -23,9 +21,7 @@ $execute if score name graves.config matches 1 run function graves:grave/entity/
 
 $execute if score xp graves.config matches 1 if score keep_inventory graves.config matches 0 as @e[type=minecraft:experience_orb,tag=!graves.bypass,distance=..10] run function graves:grave/entity/experience_orb/save {"player_id":$(player_id),"grave_id":$(grave_id)}
 
-tag @s remove graves.grave.new
-
-execute if block ~ ~-0.1 ~ air run function graves:grave/entity/interaction/prevent/air
+execute unless dimension minecraft:the_end if block ~ ~-0.1 ~ air run function graves:grave/entity/interaction/prevent/air
 execute unless block ~ ~ ~ air run function graves:grave/entity/interaction/prevent/block
 execute if block ~ ~ ~ water if block ~ ~-0.1 ~ water run function graves:grave/entity/interaction/prevent/water
 execute if block ~ ~ ~ lava run function graves:grave/entity/interaction/prevent/lava
