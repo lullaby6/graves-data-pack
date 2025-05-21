@@ -1,1 +1,0 @@
-$tag @s remove graves.player.$(id)
