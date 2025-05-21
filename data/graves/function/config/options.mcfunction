@@ -1,16 +1,13 @@
-function graves:utils/clear_chat
+function graves:utils/player/clear_chat
 
 tellraw @s [{"text":"==========[ ","color":"gray"},{"text":"Graves","color":"white","bold":true},{"text":" ]==========","color":"gray"}]
-tellraw @s [{"color":"gray","text":"Version: "},{"color":"aqua","text":"v2.3.1"}]
+tellraw @s [{"color":"gray","text":"Version: "},{"color":"aqua","text":"v2.3.2"}]
 
 tellraw @s ""
 
 tellraw @s {"color":"gray","text":"Settings:","underlined":true}
 
 tellraw @s ""
-
-execute if score graves graves.config matches 1 run tellraw @s [{"color":"gray","text":"- Graves: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:config/options/graves/disable"},"color":"green","hoverEvent":{"action":"show_text","value":[{"text":"Click to disable players graves"}]},"text":"ENABLED"}]
-execute if score graves graves.config matches 0 run tellraw @s [{"color":"gray","text":"- Graves: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:config/options/graves/enable"},"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Click to enable players graves"}]},"text":"DISABLED"}]
 
 execute if score despawn graves.config matches 1 run tellraw @s [{"color":"gray","text":"- Despawn: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:config/options/despawn/disable"},"color":"green","hoverEvent":{"action":"show_text","value":[{"text":"Click to disable graves despawn"}]},"text":"ENABLED"}]
 execute if score despawn graves.config matches 0 run tellraw @s [{"color":"gray","text":"- Despawn: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:config/options/despawn/enable"},"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Click to enable graves despawn"}]},"text":"DISABLED"}]
@@ -37,9 +34,6 @@ execute if score death_message graves.config matches 0 run tellraw @s [{"color":
 
 execute if score triggers graves.config matches 1 run tellraw @s [{"color":"gray","text":"- Triggers: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:config/options/triggers/disable"},"color":"green","hoverEvent":{"action":"show_text","value":[{"text":"Click to disable triggers"}]},"text":"ENABLED"}]
 execute if score triggers graves.config matches 0 run tellraw @s [{"color":"gray","text":"- Triggers: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:config/options/triggers/enable"},"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Click to enable triggers"}]},"text":"DISABLED"}]
-
-execute if score keep_inventory graves.config matches 1 run tellraw @s [{"color":"gray","text":"- Keep Inventory: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:config/options/keep_inventory/disable"},"color":"green","hoverEvent":{"action":"show_text","value":[{"text":"Click to disable keep inventory"}]},"text":"ENABLED"}]
-execute if score keep_inventory graves.config matches 0 run tellraw @s [{"color":"gray","text":"- Keep Inventory: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:config/options/keep_inventory/enable"},"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Click to enable keep inventory"}]},"text":"DISABLED"}]
 
 execute if score effects graves.config matches 1 run tellraw @s [{"color":"gray","text":"- Effects: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:config/options/effects/disable"},"color":"green","hoverEvent":{"action":"show_text","value":[{"text":"Click to disable effects"}]},"text":"ENABLED"}]
 execute if score effects graves.config matches 0 run tellraw @s [{"color":"gray","text":"- Effects: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function graves:config/options/effects/enable"},"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Click to enable triggers"}]},"text":"DISABLED"}]
