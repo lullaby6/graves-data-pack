@@ -1,6 +1,6 @@
 scoreboard players set load graves.config 3
 
-scoreboard players set despawn graves.config 0
+scoreboard players set despawn graves.config 1
 scoreboard players set despawn_delay graves.config 86400
 scoreboard players set glowing graves.config 1
 scoreboard players set owner graves.config 1
